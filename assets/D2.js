@@ -3,8 +3,9 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let num1 = 4;
+let num1 = null;
 let num2 = 8;
+num1 = 4;
 
 let larger = num1 > num2 ? num1 : num2;
 
@@ -23,7 +24,7 @@ num !== 5 ? console.log("not equal") : console.log("equal");
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-console.log(15 % 5); 
+console.log(15 % 5);
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
@@ -38,7 +39,6 @@ console.log(15 % 5);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let 
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
@@ -59,53 +59,64 @@ let num2 = 10;
 let num3 = 15;
 
 if (num1 >= num2 && num1 >= num3) {
-    first = num1;
-    if (num2 >= num3) {
-        second = num2;
-        third = num3;
-    } else {
-        second = num3;
-        third = num2;
-    }
+  first = num1;
+  if (num2 >= num3) {
+    second = num2;
+    third = num3;
+  } else {
+    second = num3;
+    third = num2;
+  }
 } else if (num2 >= num1 && num2 >= num3) {
-    first = num2;
-    if (num1 >= num3) {
-        second = num1;
-        third = num3;
-    } else {
-        second = num3;
-        third = num1;
-    }
+  first = num2;
+  if (num1 >= num3) {
+    second = num1;
+    third = num3;
+  } else {
+    second = num3;
+    third = num1;
+  }
 } else {
-    first = num3;
-    if (num1 >= num2) {
-        second = num1;
-        third = num2;
-    } else {
-        second = num2;
-        third = num1;
-    }
+  first = num3;
+  if (num1 >= num2) {
+    second = num1;
+    third = num2;
+  } else {
+    second = num2;
+    third = num1;
+  }
 }
 console.log("Set from the higher to lower:", first, second, third);
-
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+//
+const num1 = 10;
+if (typeof num1 === "number") {
+  console.log(" right! Thanks!");
+} else {
+  window.alert("You should give a number"); //DA COMPLETARE
+}
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let num1 = 10;
+if (num1 % 5) {
+  console.log("equal number");
+} else {
+  console.log("unequal number");
+}
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
   let val = 7
   if (val < 10) {
-      console.log("Meno di 10");
+      console.log("Meno di 10"); //true
     } else if (val < 5) {
       console.log("Meno di 5");
     } else {
@@ -149,6 +160,9 @@ console.log(me);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let array = -[];
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(array);
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
