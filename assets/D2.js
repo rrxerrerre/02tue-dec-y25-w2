@@ -54,8 +54,8 @@ console.log(15 % 5);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let num1 = 5;
-let num2 = 10;
+num1 = 5;
+num2 = 10;
 let num3 = 15;
 
 if (num1 >= num2 && num1 >= num3) {
@@ -94,7 +94,7 @@ console.log("Set from the higher to lower:", first, second, third);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 //
-const num1 = 10;
+num1 = 10;
 if (typeof num1 === "number") {
   console.log(" right! Thanks!");
 } else {
@@ -106,7 +106,7 @@ if (typeof num1 === "number") {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let num1 = 10;
+num1 = 10;
 if (num1 % 5) {
   console.log("equal number");
 } else {
@@ -169,3 +169,30 @@ console.log(array);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+array.pop();
+array.push(100);
+console.log(array);
+
+/*ESERCIZIO 16
+ Scrivi una funzione che prenda in input come parametri una array, un valore da cercare nell'array e il valore che vuoi 
+ utilizzare per sostituire il valore cercato.
+*/
+
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+sostituisciValoreNellArray(array, 50, 8);
+
+function sostituisciValoreNellArray(array, valoreDaSostituire, valoreCercato) {
+  console.log("parametri input alla funzione: ", array, valoreDaSostituire, valoreCercato);
+  for (let i = 0; i < array.length; i++) {
+    console.log("valore della i: ", i);
+    console.log("valore della array: ", array[i]);
+    if (array[i] == valoreCercato) {
+      console.log("valore prima della sostituzione: ", array[i]);
+      array[i] = valoreDaSostituire;
+      console.log("valore dopo la sostituzione: ", array[i]);
+    }
+  }
+  console.log("funzione terminata");
+}
